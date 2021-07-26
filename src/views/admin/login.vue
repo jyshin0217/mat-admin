@@ -33,6 +33,9 @@ export default {
             console.log('button test')
             console.log('id => ' + this.id)
             console.log('pw => ' + this.pw)
+            if(this.id !== '' && this.pw !== '') {
+                this.$router.push({ path: '/home' })
+            }
         }
     }
 }
